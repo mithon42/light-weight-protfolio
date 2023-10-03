@@ -14,11 +14,13 @@
 </head>
 <body>
    <!-- ############ header start ############## -->
-   <header id="home">
+   <header>
       <div class="logo">
-         <span>M</span>itho<span>n</span>
+         <a href="#home">
+            <span>M</span>itho<span>n</span>
+         </a>
       </div>
-      <ul class="navItems">
+      <ul class="navLists">
          <li><a href="#home">home</a></li>
          <li><a href="#about">about</a></li>
          <li><a href="#services">services</a></li>
@@ -33,7 +35,7 @@
 
 
    <!-- ############ Home section Start ############ -->
-   <section class="home">
+   <section class="home" id="home">
       <div class="homeContent">
          <h1>Hi! I'm Mithon</h1>
          <div class="changeText">
@@ -402,10 +404,41 @@
 
 
 
+   <!-- ############ Contact section Start ############ -->
+   <section id="contact" class="contact">
+      <div class="miniText">
+         <span>ask me question</span>
+         <h2>Contact us</h2>
+      </div>
 
-   <div class="comingSone">
-      <h2>coming sone !...</h2>
-   </div>
+      <form action="#" method="post">
+         <input type="text" placeholder="Your Name">
+         <input type="email" placeholder="Your Email">
+         <input type="text" placeholder="Your Address">
+         <input type="number" placeholder="Your Phone">
+         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+         <div class="btnBox formBtn">
+            <button type="submit" class="btn">Send Message</button>
+         </div>
+      </form>
+   </section>
+   <!-- ############ Contact section Ends ############ -->
+
+
+
+   <!-- ############ FOOTER START ############ -->
+   <footer>
+      <p class="copyright">copyright &copy; 2023 by 
+         <a href="https://www.facebook.com/mithon2003/" target="_blank">mithon</a> || all right reservd.
+      </p>
+
+      <a href="#home" class="topArrow">
+         <i class="fa-solid fa-arrow-up"></i>
+      </a>
+   </footer>
+   <!-- ############ FOOTER ENDS ############ -->
+
+
 
    <!-- Javascript -->
    <script src="./js/mixitup.min.js"></script>

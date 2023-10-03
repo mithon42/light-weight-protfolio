@@ -1,4 +1,4 @@
-// Changes Text Start #####################
+// Changes Text Start ############################################
 let words = document.querySelectorAll('.word');
 
 words.forEach((word) => {
@@ -40,11 +40,9 @@ let changeText = () => {
 
 changeText();
 setInterval(changeText, 3000);
-// Changes Text Ends #####################
 
 
-
-//  Circle Skills Start #####################
+//  Circle Skills Start ########################################
 const circles = document.querySelectorAll('.circle');
 circles.forEach(elem => {
    let dots = elem.getAttribute('data-dots');
@@ -64,8 +62,28 @@ circles.forEach(elem => {
    };
 });
 
-//  Circle Skills Ends #####################
 
-
-//  portfolio mixitup mixer #####################
+// portfolio mixitup mixer ####################################
 let mixer = mixitup('.portfolioGallery');
+
+
+// Active Menu #################################################
+let menuLi = document.querySelectorAll('header ul li a');
+let section = document.querySelectorAll('section');
+
+function activeMenu(){
+   let sectionLength = section.length;
+   while(--sectionLength && window.scrollY + 97 < section[sectionLength].offsetTop){}
+   menuLi.forEach(sec => sec.classList.remove('active'));
+   menuLi[sectionLength].classList.add('active');
+};
+activeMenu();
+
+window.addEventListener('scroll', activeMenu);
+
+
+// Sticky Navbar #################################################
+const header = document.querySelector('header');
+window.addEventListener('scroll', function(){
+   header.classList.toggle('sticky', this.window.scrollY > 50)
+})
