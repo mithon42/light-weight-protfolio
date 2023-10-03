@@ -79,6 +79,7 @@ header {
 
 .logo span {
   color: var(--hover-color);
+  text-transform: uppercase;
 }
 
 .navItems {
@@ -682,7 +683,11 @@ a.btn:nth-child(2)::before{
 
 
 
-
+.comingSone h2{
+   text-align: center;
+   text-transform: capitalize;
+   color: var(--hover-color);
+}
 
 /* ################ KEYFRAMES START ################# */
 @keyframes morph {
