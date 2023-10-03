@@ -65,3 +65,7 @@ circles.forEach(elem => {
 });
 
 //  Circle Skills Ends #####################
+
+
+//  portfolio mixitup mixer #####################
+let mixer = mixitup('.portfolioGallery');
