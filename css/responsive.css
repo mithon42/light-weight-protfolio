@@ -1,0 +1,100 @@
+/* ################ Break Points Start ################# */
+@media (max-width: 991px) { /* Large Screen */
+   header,
+   header.sticky{
+      padding: 15px 5%;
+   }
+   
+   section{
+      padding: 50px 5%;
+   }
+
+   .navLists{
+      padding: 8px 15px;
+   }
+
+   .navLists a{
+      padding: 10px 15px;
+   }
+
+   :root{
+      --big-font: 2.2rem;
+      --normal-font: 1.8rem;
+      --neon-box-shadow: 0 0 0.8rem #12f7ff;
+      --h2-font: 3rem;
+   }
+
+   .homeContent{
+      margin-top: 5rem;
+   }
+
+   .socialIcons{
+      margin-top: 2rem;
+   }
+
+   footer{
+      padding: 15px 5%;
+   }
+}
+
+
+@media (max-width: 768px) { /* Medium Screen */
+   #menuIcon{
+      display: block;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+   }
+
+   #menuIcon.fa-xmark{
+      transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+   }
+
+   .navLists{
+      display: flex;
+      position: absolute;
+      top: -1000px;
+      right: 0;
+      left: 0;
+      flex-direction: column;
+      background-color: var(--bg-color);
+      text-align: left;
+      padding: 0 5%;
+      transition: all 0.4s ease;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+   }
+
+   .navLists a{
+      display: block;
+      padding-bottom: 1rem;
+      font-size: 1rem;
+   }
+
+   .navLists.open{
+      top: 100%;
+   }
+
+   .home{
+      grid-template-columns: 1fr;
+   }
+   
+   .homeImage{
+      margin-bottom: 5rem;
+   }
+
+   .liquidShape{
+      width: 65%;
+      left: 10%;
+      top: 0;
+   }
+}
+/* ################ Break Points Ends ################# */

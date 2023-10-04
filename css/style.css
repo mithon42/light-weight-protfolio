@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* ################ RESET STYLE START ################# */
+/* ################ RESET / COMMON STYLE START ################# */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -42,7 +42,11 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* ################ RESET STYLE ENDS ################# */
+
+section{
+   padding: 100px 10%;
+}
+/* ################ RESET / COMMON STYLE ENDS ################# */
 
 /* ################ ROOT STYLE START ################# */
 :root {
@@ -157,14 +161,11 @@ header.sticky{
    -o-border-radius: 3px;
    color: var(--second-bg-color);
    display: none;
+   padding: 2px 5px;
 }
 /* ################ HEADER STYLE ENDS ################# */
 
 /* ################ HOME SECTION START ################# */
-section{
-   padding: 100px 10%;
-}
-
 h3{
    font-weight: 500;
 }
@@ -953,7 +954,7 @@ footer{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 1.2rem 10%;
+   padding: 1.5rem 10%;
 }
 
 footer p{
@@ -1004,19 +1005,6 @@ footer a.topArrow:hover i{
    color: var(--text-color);
 }
 /* ################ FOOTER ENDS ################# */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1101,5 +1089,4 @@ footer a.topArrow:hover i{
       box-shadow: var(--neon-box-shadow);
    }
 }
-
 /* ################ KEYFRAMES ENDS ################# */

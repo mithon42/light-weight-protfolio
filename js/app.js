@@ -87,3 +87,18 @@ const header = document.querySelector('header');
 window.addEventListener('scroll', function(){
    header.classList.toggle('sticky', this.window.scrollY > 50)
 })
+
+
+// Toggle Icon Navbar #############################################
+let menuIcon = document.querySelector('#menuIcon');
+let navLists = document.querySelector('.navLists');
+
+menuIcon.onclick = () => {
+   menuIcon.classList.toggle("fa-xmark");
+   navLists.classList.toggle("open");
+}
+
+window.onscroll = () => {
+   menuIcon.classList.remove("fa-xmark");
+   navLists.classList.remove("open");
+}
