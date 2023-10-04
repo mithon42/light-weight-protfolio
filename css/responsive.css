@@ -83,6 +83,7 @@
       top: 100%;
    }
 
+   /* home */
    .home{
       grid-template-columns: 1fr;
    }
@@ -96,5 +97,37 @@
       left: 10%;
       top: 0;
    }
+
+   /* about */
+   .about{
+      flex-direction: column-reverse;
+   }
+
+   /* skills */
+   .skillMain{
+      grid-template-columns: 1fr;
+   }
+
+   /* portfolio */
+   .filterButton{
+      margin: 2rem 0;
+   }
 }
+
+
+@media (max-width: 420px) { /* Small Screen */
+   html{
+      font-size: 80%;
+   }
+
+   /* portfolio */
+   .filterButton .btn{
+      font-size: 0.8rem;
+   }
+
+   footer p{
+      font-size: 0.6rem;
+   }
+}
+
 /* ################ Break Points Ends ################# */
