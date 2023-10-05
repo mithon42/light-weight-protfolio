@@ -102,3 +102,24 @@ window.onscroll = () => {
    menuIcon.classList.remove("fa-xmark");
    navLists.classList.remove("open");
 }
+
+
+// Parallax #############################################
+const observer = new IntersectionObserver((entries) => {
+   entries.forEach((entry) => {
+      if(entry.isIntersecting){
+         entry.target.classList.add('showItems')
+      }else{
+         entry.target.classList.remove('showItems')
+      }
+   })
+});
+
+const scrollScale = document.querySelectorAll('.scrollScale');
+scrollScale.forEach((element) => observer.observe(element));
+
+const scrollBottom = document.querySelectorAll('.scrollBottom');
+scrollBottom.forEach((element) => observer.observe(element));
+
+const scrollTop = document.querySelectorAll('.scrollTop');
+scrollTop.forEach((element) => observer.observe(element));

@@ -1,5 +1,6 @@
 /* ################ Break Points Start ################# */
-@media (max-width: 991px) { /* Large Screen */
+/* Large Screen */
+@media (max-width: 991px) {
    header,
    header.sticky{
       padding: 15px 5%;
@@ -37,8 +38,8 @@
    }
 }
 
-
-@media (max-width: 768px) { /* Medium Screen */
+/* Medium Screen */
+@media (max-width: 768px) {
    #menuIcon{
       display: block;
       transition: all 0.4s ease;
@@ -114,13 +115,16 @@
    }
 }
 
-
-@media (max-width: 420px) { /* Small Screen */
+/* Small Screen */
+@media (max-width: 420px) {
    html{
       font-size: 80%;
    }
+   
+   .homeImage{
+      margin-bottom: 0.5rem;
+   }
 
-   /* portfolio */
    .filterButton .btn{
       font-size: 0.8rem;
    }
@@ -128,6 +132,16 @@
    footer p{
       font-size: 0.6rem;
    }
-}
 
+   .aboutImage img{
+      width: 300px;
+   }
+
+   .aboutInfo1,
+   .aboutInfo2,
+   .aboutInfo3{
+      width: 70px;
+      height: 70px;
+   }
+}
 /* ################ Break Points Ends ################# */

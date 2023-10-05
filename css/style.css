@@ -124,6 +124,7 @@ header.sticky{
 }
 
 .navLists a {
+   display: inline-block;
   color: var(--text-color);
   font-weight: 500;
   padding: 10px 20px;
@@ -133,6 +134,10 @@ header.sticky{
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   text-transform: capitalize;
+  animation: slideAnimation 1s ease forwards;
+  -webkit-animation: slideAnimation 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+  opacity: 0;
 }
 
 .navLists a:hover {
@@ -1007,6 +1012,64 @@ footer a.topArrow:hover i{
 /* ################ FOOTER ENDS ################# */
 
 
+/* ################ Parallax START ################# */
+.scrollScale{
+   opacity: 0;
+   transform: scale(0.9);
+   -webkit-transform: scale(0.9);
+   -moz-transform: scale(0.9);
+   -ms-transform: scale(0.9);
+   -o-transform: scale(0.9);
+   transition: all 2s;
+   -webkit-transition: all 2s;
+   -moz-transition: all 2s;
+   -ms-transition: all 2s;
+   -o-transition: all 2s;
+}
+
+.scrollBottom{
+   opacity: 0;
+   transform: translateY(300px);
+   -webkit-transform: translateY(300px);
+   -moz-transform: translateY(300px);
+   -ms-transform: translateY(300px);
+   -o-transform: translateY(300px);
+   transition: 2.5s;
+   -webkit-transition: 2.5s;
+   -moz-transition: 2.5s;
+   -ms-transition: 2.5s;
+   -o-transition: 2.5s;
+}
+
+.scrollTop{
+   opacity: 0;
+   transform: translateY(-300px);
+   -webkit-transform: translateY(-300px);
+   -moz-transform: translateY(-300px);
+   -ms-transform: translateY(-300px);
+   -o-transform: translateY(-300px);
+   transition: 2.5s;
+   -webkit-transition: 2.5s;
+   -moz-transition: 2.5s;
+   -ms-transition: 2.5s;
+   -o-transition: 2.5s;
+}
+
+.showItems{
+   opacity: 1;
+   transform: translateX(0);
+   -webkit-transform: translateX(0);
+   -moz-transform: translateX(0);
+   -ms-transform: translateX(0);
+   -o-transform: translateX(0);
+}
+/* ################ Parallax ENDS ################# */
+
+
+
+
+
+
 
 /* ################ KEYFRAMES START ################# */
 @keyframes morph {
@@ -1087,6 +1150,26 @@ footer a.topArrow:hover i{
    100%{
       background-color: var(--hover-color);
       box-shadow: var(--neon-box-shadow);
+   }
+}
+
+
+@keyframes slideAnimation {
+   0%{
+      opacity: 0;
+      transform: translateY(100px);
+      -webkit-transform: translateY(100px);
+      -moz-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+      -o-transform: translateY(100px);
+   }
+   100%{
+      opacity: 1;
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
    }
 }
 /* ################ KEYFRAMES ENDS ################# */

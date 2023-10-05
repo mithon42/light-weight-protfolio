@@ -22,12 +22,12 @@
          </a>
       </div>
       <ul class="navLists">
-         <li><a href="#home">home</a></li>
-         <li><a href="#about">about</a></li>
-         <li><a href="#services">services</a></li>
-         <li><a href="#skills">skills</a></li>
-         <li><a href="#portfolio">portfolio</a></li>
-         <li><a href="#contact">contact</a></li>
+         <li><a href="#home" style="--i:1">home</a></li>
+         <li><a href="#about" style="--i:2">about</a></li>
+         <li><a href="#services" style="--i:3">services</a></li>
+         <li><a href="#skills" style="--i:4">skills</a></li>
+         <li><a href="#portfolio" style="--i:5">portfolio</a></li>
+         <li><a href="#contact" style="--i:6">contact</a></li>
       </ul>
       <div id="menuIcon" class="fa-solid fa-bars"></div>
    </header>
@@ -35,7 +35,7 @@
 
    <!-- ############ Home section Start ############ -->
    <section class="home" id="home">
-      <div class="homeContent">
+      <div class="homeContent scrollScale">
          <h1>Hi! I'm Mithon</h1>
          <div class="changeText">
             <h3>And I'm</h3>
@@ -74,7 +74,7 @@
          </div>
       </div>
 
-      <div class="homeImage">
+      <div class="homeImage scrollScale">
          <div class="imgBox">
             <img src="./images/home-img.jpg" alt="home images">
          </div>
@@ -141,7 +141,7 @@
 
    <!-- ############ About section Start ############# -->
    <section id="about" class="about">
-      <div class="aboutImage">
+      <div class="aboutImage scrollScale">
          <img src="./images/home-img.jpg" alt="about image">
          <div class="aboutInfo1">
             <span>3+</span>
@@ -157,7 +157,7 @@
          </div>
       </div>
 
-      <div class="aboutContent">
+      <div class="aboutContent scrollScale">
          <span>let me introduce myself</span>
          <h2>About me</h2>
          <h3>A story of good</h3>
@@ -172,12 +172,12 @@
 
    <!-- ########### Services section Start ########### -->
    <section class="services" id="services">
-      <div class="miniText">
+      <div class="miniText scrollScale">
          <span>What i will do for you</span>
          <h2>our services</h2>
       </div>
 
-      <div class="sectionServices">
+      <div class="sectionServices scrollBottom">
          <div class="serviceBox">
             <i class="fa-brands fa-react serviceIcon"></i>
             <h3>React Developer</h3>
@@ -216,13 +216,13 @@
 
    <!-- ############ Skills section Start ############ -->
    <section id="skills" class="skills">
-      <div class="miniText">
+      <div class="miniText scrollScale">
          <span>Technical and professional</span>
          <h2>My skills</h2>
       </div>
 
       <div class="skillMain">
-         <div class="skillLeft">
+         <div class="skillLeft scrollScale">
             <h3>Technical skills</h3>
             <div class="skillBar">
                <div class="info">
@@ -263,7 +263,7 @@
          </div>
          
          <!-- skill right -->
-         <div class="skillRight">
+         <div class="skillRight scrollScale">
             <h3>professional skills</h3>
             <div class="professional">
                <div class="box">
@@ -302,20 +302,20 @@
 
    <!-- ############ Portfolio section Start ############ -->
    <section id="portfolio" class="portfolio">
-      <div class="miniText">
+      <div class="miniText scrollScale">
          <span>what i will do for you</span>
          <h2>latest project</h2>
       </div>
 
       <div class="container">
-         <div class="filterButton">
+         <div class="filterButton scrollScale">
             <button class="btn" data-filter="all">all</button>
             <button class="btn" data-filter=".product">product</button>
             <button class="btn" data-filter=".interacting">interacting</button>
             <button class="btn" data-filter=".webApp">web app</button>
          </div>
 
-         <div class="portfolioGallery">
+         <div class="portfolioGallery scrollBottom">
             <div class="portfolioBox mix product interacting">
                <div class="portfolioImage">
                   <img src="./images/portfolio-1.jpg" alt="portfolio-1">
@@ -395,12 +395,12 @@
 
    <!-- ############ Contact section Start ############ -->
    <section id="contact" class="contact">
-      <div class="miniText">
+      <div class="miniText scrollScale">
          <span>ask me question</span>
          <h2>Contact us</h2>
       </div>
 
-      <form action="#" method="post">
+      <form action="#" method="post" class="scrollBottom">
          <input type="text" placeholder="Your Name">
          <input type="email" placeholder="Your Email">
          <input type="text" placeholder="Your Address">
@@ -414,7 +414,7 @@
    <!-- ############ Contact section Ends ############ -->
 
    <!-- ############ FOOTER START ############ -->
-   <footer>
+   <footer class="scrollScale">
       <p class="copyright">copyright &copy; 2023 by 
          <a href="https://www.facebook.com/mithon2003/" target="_blank">mithon</a> || all right reservd.
       </p>
