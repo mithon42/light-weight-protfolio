@@ -109,7 +109,6 @@
       grid-template-columns: 1fr;
    }
 
-   /* portfolio */
    .filterButton{
       margin: 2rem 0;
    }
@@ -125,7 +124,7 @@
       margin-bottom: 0.5rem;
    }
 
-   .filterButton .btn{
+   .filterButton .button{
       font-size: 0.8rem;
    }
 
